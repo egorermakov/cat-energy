@@ -1,0 +1,59 @@
+.example {
+  background-color: $color-gray-bright;
+
+  &__wrapper {
+    padding: 25px 20px 40px;
+  }
+
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: $font-heading;
+    font-size: 36px;
+    line-height: 40px;
+    color: $color-black;
+    font-weight: 400;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+  }
+
+  &__number {
+    font-family: $font-heading;
+    font-size: 24px;
+    line-height: 1;
+    color: $color-black;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__definition {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  &__spending {
+    font-family: $font-heading;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+
+  &_slider .slider__button {
+    font-family: $font-heading;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-black;
+    border: none;
+    background: transparent;
+  }
+}

@@ -1,0 +1,17 @@
+.page-main {
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 36px;
+    line-height: 1;
+    color: $color-black;
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    font-family: $font-heading;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+}

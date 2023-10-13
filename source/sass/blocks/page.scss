@@ -1,0 +1,10 @@
+.page {
+  font-family: $font-body;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-grey-dark;
+
+  &__body {
+    margin: 0;
+  }
+}

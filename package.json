@@ -3,16 +3,16 @@
   "private": true,
   "description": "Личный проект «{{projectTitle}}» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^2.0.5",
+    "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
-    "browser-sync": "^2.29.3",
-    "gulp": "^3.9.1",
+    "browser-sync": "2.27.7",
+    "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
-    "postcss": "15.10.3",
-    "stylelint": "^15.10.3",
-    "stylelint-config-htmlacademy": "^2.0.4"
+    "postcss": "8.3.11",
+    "stylelint": "13.13.1",
+    "stylelint-config-htmlacademy": "0.1.11"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

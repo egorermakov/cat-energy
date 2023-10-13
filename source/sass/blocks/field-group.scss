@@ -1,0 +1,17 @@
+.field-group {
+  padding: 20px 0;
+  border: none;
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    color: $color-black;
+  }
+
+  &__list {
+    padding: 0;
+    list-style-type: none;
+  }
+}

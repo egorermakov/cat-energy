@@ -1,0 +1,24 @@
+.contacts {
+
+
+  &__wrapper {
+    padding: 26px 20px;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+
+  &__address {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &--inner {
+    background-color: $color-grey;
+  }
+}

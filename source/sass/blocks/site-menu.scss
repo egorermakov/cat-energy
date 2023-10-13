@@ -1,0 +1,18 @@
+.site-menu {
+  font-family: $font-heading;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  list-style: none;
+
+  &__item {
+
+  }
+
+  &__link {
+    color: $color-black;
+    text-decoration: none;
+  }
+
+}

@@ -1,0 +1,14 @@
+.card-row {
+  &__title {
+    font-family: $font-heading;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-grey-darker;
+  }
+
+  &__info {
+    line-height: 14px;
+  }
+}
