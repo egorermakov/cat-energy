@@ -46,14 +46,9 @@
       left: 17px;
       height: 2px;
       background-color: $color-primary;
-
-      @media (min-width: $desktop-width) {
-        background-color: $color-white;
-      }
     }
   }
 }
-
 
 .site-menu__link {
   padding: 24px;
@@ -63,9 +58,5 @@
 
   @media (min-width: $tablet-width) {
     padding: 17px;
-  }
-
-  @media (min-width: $desktop-width) {
-    color: $color-white;
   }
 }

@@ -1,16 +1,64 @@
 .catalog-additional {
   padding: 20px;
+}
 
-  &__title {
-    font-family: $font-heading;
-    font-size: 24px;
-    line-height: 1;
-    font-weight: 400;
-    color: $color-black;
+.catalog-additional__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 80px
+  }
+}
+
+.catalog-additional__title {
+  font-family: $font-heading;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  color: $color-black;
+  grid-column: 1 / 3;
+}
+
+.catalog-additional__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.card-row {
+  display: grid;
+  align-content: start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "size price"
+    "button button";
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "title size price"
+    "button button button";
   }
 
-  &__list {
-    padding: 0;
-    list-style-type: none;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "title size price button";
   }
+
+}
+
+.card-row__title {
+  grid-area: title;
+}
+
+.card-row__size {
+  grid-area: size;
+}
+.card-row__price {
+  grid-area: price;
+  text-align: right;
+}
+
+.card-row__button {
+  grid-area: button;
 }
