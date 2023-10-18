@@ -1,5 +1,9 @@
+// Fonts
+
 $font-heading: "Oswald", "Arial", sans-serif;
 $font-body: "Arial", sans-serif;
+
+// Colors
 
 $color-black: #000000;
 $color-white: #ffffff;
@@ -10,3 +14,9 @@ $color-grey-dark: #444444;
 $color-grey-darker: #222222;
 
 $color-primary: #68B738;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1280px;
+$mobile-width-only: 767px;

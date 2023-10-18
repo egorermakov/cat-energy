@@ -2,27 +2,30 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи — Функциональное питание для котов</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="page-header__nav">
-        <a class="page-header__logo logo">
-          <img class="logo__image" src="./img/logo-image.svg" width="33" height="38" alt="Cat Energy">
-          <img class="logo__sign" src="./img/logo-sign.svg" width="101" height="18" alt="" aria-hidden="true">
-        </a>
+      <div class="page-header__nav">
+        <div class="page-header__bar">
+          <a class="page-header__logo logo" href="/">
+            <img class="logo__image" src="img/logo-image.svg" width="33" height="38" alt="Cat Energy">
+            <img class="logo__sign" src="img/logo-sign.svg" width="101" height="18" alt="" aria-hidden="true">
+          </a>
 
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
 
         <ul class="page-header__menu site-menu">
           <li class="site-menu__item">
-            <a class="site-menu__link" href="./index.html">Главная</a>
+            <a class="site-menu__link" href="index.html">Главная</a>
           </li>
           <li class="site-menu__item">
-            <a class="site-menu__link" href="./catalog.html">Каталог продукции</a>
+            <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-menu__item site-menu__item--active">
             <a class="site-menu__link">Подбор программы</a>
@@ -154,15 +157,16 @@
         </form>
       </section>
 
-      <section class="contacts contacts--inner">
-        <div class="contacts__wrapper">
+      <section class="contacts">
+        <div class="contacts__container container">
           <h2 class="visually-hidden">Контакты</h2>
 
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
 
         <img class="contacts__map" src="./img/map.png" width="320" height="362" alt="Карта к нашему офису">
+
       </section>
     </main>
 

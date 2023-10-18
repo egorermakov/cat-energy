@@ -1,11 +1,18 @@
 .button {
-  color: $color-white;
-  background-color: $color-primary;
+  padding: 11px 12px;
+  display: inline-block;
   border: none;
-
   font-family: $font-heading;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-primary;
+
+  @media(min-width: $tablet-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+  }
 
   &--secondary {
     background-color: $color-grey;

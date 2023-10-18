@@ -1,0 +1,21 @@
+.social {
+  padding: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.social__item {
+  margin: 0 4px;
+  display: flex;
+  align-items: center;
+
+  outline: 2px solid red;
+}
+
+.social__link {
+  display: block;
+  padding: 8px;
+  color: #666666;
+}

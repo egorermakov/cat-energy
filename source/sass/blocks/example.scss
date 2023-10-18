@@ -1,59 +1,59 @@
 .example {
+  padding: 25px 0 40px;
   background-color: $color-gray-bright;
+}
 
-  &__wrapper {
-    padding: 25px 20px 40px;
+.example__container {
+  @media (min-width: $desktop-width) {
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 
+}
 
-  &__title {
-    margin-bottom: 40px;
-    font-family: $font-heading;
-    font-size: 36px;
-    line-height: 40px;
-    color: $color-black;
-    font-weight: 400;
-  }
+.example__title {
+  margin-bottom: 40px;
+  font-family: $font-heading;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-black;
+  font-weight: 400;
 
-  &__description {
-    margin-bottom: 20px;
-  }
-
-  &__list {
-    margin-bottom: 20px;
-  }
-
-  &__number {
-    font-family: $font-heading;
-    font-size: 24px;
-    line-height: 1;
-    color: $color-black;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-
-  &__definition {
-    font-size: 12px;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
     line-height: 1;
   }
+}
 
-  &__spending {
-    font-family: $font-heading;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $color-black;
-  }
+.example__description {
+  margin-bottom: 20px;
+}
 
-  &_slider .slider__button {
-    font-family: $font-heading;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $color-black;
-    border: none;
-    background: transparent;
-  }
+.example__list {
+  margin-bottom: 20px;
+}
+
+.example__number {
+  font-family: $font-heading;
+  font-size: 24px;
+  line-height: 1;
+  color: $color-black;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.example__definition {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.example__spending {
+  font-family: $font-heading;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-black;
+  text-align: center;
 }
