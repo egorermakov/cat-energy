@@ -3,8 +3,13 @@
   background-color: $color-gray-100;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to top, $color-gray-100 462px, $color-white 462px);
+    padding: 43px 0 60px;
+    background-image:
+      linear-gradient(to top, $color-gray-100 462px, $color-white 462px);
+  }
 
+  @media (min-width: $desktop-width) {
+    padding: 43px 0 75px;
   }
 }
 
@@ -23,7 +28,6 @@
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: 366px 1fr;
-    // grid-auto-rows: min-content;
     column-gap: 32px;
   }
 
