@@ -1,23 +1,22 @@
 .card {
   @media (min-width: $tablet-width) {
-    background-color: $color-grey;
+    background-color: $color-gray-50;
   }
+}
 
-  &__link {
-    text-decoration: none;
-  }
+.card__link {
+  text-decoration: none;
+}
 
-  &__title {
-    font-family: $font-heading;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $color-grey-darker;
-  }
+.card__title {
+  font-family: $font-heading;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-gray-850
+}
 
-  &__parameter {
-    font-size: 12px;
-  }
-
+.card__parameter {
+  font-size: 12px;
 }

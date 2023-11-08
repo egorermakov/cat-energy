@@ -1,6 +1,6 @@
 .contacts {
   &:not(.contacts--main) {
-    background-color: $color-grey;
+    background-color: $color-gray-50;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,5 +82,3 @@
     left: 0;
   }
 }
-
-

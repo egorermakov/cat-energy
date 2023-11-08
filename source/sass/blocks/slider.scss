@@ -1,4 +1,79 @@
+.slider {
+  display: grid;
+  grid-template-columns: 49px 1fr 49px;
+  align-items: center;
+  gap: 13px;
+  padding: 0 35px;
+}
+
+.slider__toggler {
+  padding: 4px 6px;
+  display: flex;
+  background-color: $color-white;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    width: 50%;
+    height: 6px;
+    background-color: $color-primary-500;
+    border-radius: 6px;
+  }
+
+  .slider--after & {
+    justify-content: flex-end;
+  }
+
+  .slider--before & {
+    justify-content: flex-start;
+  }
+}
+
+.slider__bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+
+  }
+}
+
+.slider__bar::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 6px;
+  background-color: $color-gray-180;
+}
+
+.slider__bar::-webkit-slider-thumb {
+  appearance: none;
+
+  width: 32px;
+  height: 32px;
+  margin-top: -12px;
+  border: 12px solid $color-white;
+  border-radius: 50%;
+  background-color: $color-primary-500;
+  filter: drop-shadow(0px 1px 3px rgba($color-black, 0.16));
+  cursor: pointer;
+}
+
+.slider__bar::-moz-range-track {
+
+}
+
+.slider__bar::-moz-range-thumb {
+
+}
+
 .slider__button {
+  padding: 0;
   font-family: $font-heading;
   font-size: 16px;
   line-height: 20px;
@@ -7,4 +82,10 @@
   color: $color-black;
   border: none;
   background: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+    border-bottom: 1px dotted rgba($color-black, 0.24);
+    justify-self: center;
+  }
 }

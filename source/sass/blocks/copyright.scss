@@ -5,7 +5,7 @@
   font-size: 16px;
   line-height: 1;
   text-decoration: none;
-  color: $color-grey-dark;
+  color: $color-gray-700;
 
   @media (max -width: $mobile-width-only) {
     justify-content: space-between;
@@ -16,5 +16,5 @@
   display: block;
   margin: 0;
   margin-left: 22px;
-  fill: $color-grey-dark;
+  fill: $color-gray-700
 }

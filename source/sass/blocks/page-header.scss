@@ -13,6 +13,30 @@
   }
 }
 
+.page-header__menu {
+  // margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $color-white;
+
+    .page-header__nav--closed & {
+      display: none;
+    }
+
+    .page-header__nav--opened & {
+      position: absolute;
+      right: 0;
+      left: 0;
+      display: block;
+    }
+
+    .page-header__nav--nojs & {
+      position: static;
+      min-height: 0;
+    }
+  }
+}
+
 .page-header__bar {
   @media (max-width: $mobile-width-only) {
     margin: 0 auto;
