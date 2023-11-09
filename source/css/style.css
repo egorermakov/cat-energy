@@ -66,6 +66,13 @@ img {
   color: #ffffff;
   background-color: #68b738;
 }
+.button:hover {
+  background-color: #5eaa2f;
+}
+.button:focus, .button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
+}
 .button--secondary {
   background-color: #f2f2f2;
   color: #444444;
@@ -485,6 +492,9 @@ img {
 }
 .catalog-section__link:hover::after {
   width: 32px;
+}
+.catalog-section__link:focus, .catalog-section__link:active {
+  opacity: 0.3;
 }
 
 .process {
@@ -966,7 +976,13 @@ img {
   text-decoration: none;
   color: #444444;
 }
-@media (max -width: 767px) {
+.copyright:hover .copyright__image {
+  fill: #68b738;
+}
+.copyright:focus, .copyright:active {
+  opacity: 0.3;
+}
+@media (max-width: 767px) {
   .copyright {
     justify-content: space-between;
   }
@@ -1014,8 +1030,13 @@ img {
   .site-menu--main .site-menu__link {
     color: #ffffff;
   }
+  .site-menu--main .site-menu__link[href]:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .site-menu--main .site-menu__link[href]:focus, .site-menu--main .site-menu__link[href]:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
-
 @media (max-width: 767px) {
   .site-menu__item {
     border-bottom: 1px solid #e6e6e6;
@@ -1048,6 +1069,12 @@ img {
   display: block;
   color: #000000;
   text-decoration: none;
+}
+.site-menu__link[href]:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.site-menu__link[href]:focus, .site-menu__link[href]:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 768px) {
   .site-menu__link {
@@ -1305,6 +1332,15 @@ img {
   color: #222222;
 }
 
+.logo {
+  cursor: pointer;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:focus, .logo:active {
+  opacity: 0.6;
+}
 .logo:not(.logo--footer) {
   display: grid;
   grid-template-columns: 34px 1fr;
@@ -1424,11 +1460,18 @@ img {
   margin: 0 4px;
   display: flex;
   align-items: center;
+  fill: currentColor;
 }
 
 .social__link {
   display: block;
   padding: 8px;
   color: #666666;
+}
+.social__link:hover {
+  color: #68b738;
+}
+.social__link:focus, .social__link:active {
+  opacity: 0.3;
 }
 /*# sourceMappingURL=style.css.map */

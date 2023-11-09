@@ -188,4 +188,9 @@
       width: 32px;
     }
   }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
 }

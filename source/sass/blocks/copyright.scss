@@ -7,7 +7,18 @@
   text-decoration: none;
   color: $color-gray-700;
 
-  @media (max -width: $mobile-width-only) {
+  &:hover {
+    .copyright__image {
+      fill: $color-primary-500;
+    }
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $mobile-width-only) {
     justify-content: space-between;
   }
 }

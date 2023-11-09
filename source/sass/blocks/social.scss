@@ -10,10 +10,20 @@
   margin: 0 4px;
   display: flex;
   align-items: center;
+  fill: currentColor;
 }
 
 .social__link {
   display: block;
   padding: 8px;
-  color: #666666;
+  color: $color-gray-600;
+
+  &:hover {
+    color: $color-primary-500;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
 }

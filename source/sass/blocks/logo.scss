@@ -1,4 +1,15 @@
 .logo {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
+
   &:not(.logo--footer) {
     display: grid;
     grid-template-columns: 34px 1fr;

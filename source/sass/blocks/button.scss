@@ -11,6 +11,16 @@
   color: $color-white;
   background-color: $color-primary-500;
 
+  &:hover{
+    background-color: $color-primary-700;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba($color-white, 0.3);
+    background-color: $color-primary-700;
+  }
+
   &--secondary {
     background-color: $color-gray-50;
     color: $color-gray-700
