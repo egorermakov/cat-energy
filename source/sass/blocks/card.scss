@@ -1,22 +1,75 @@
 .card {
+  padding: 20px 0 25px;
+  display: grid;
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image link"
+      "image list"
+      "button button";
+  }
+
   @media (min-width: $tablet-width) {
-    background-color: $color-gray-50;
+    padding: 8px 38px 40px;
+    grid-template-rows: 200px auto;
+    grid-template-areas:
+      "image"
+      "link"
+      "list"
+      "button";
+    background-image: linear-gradient($color-white 81px, $color-gray-50 81px);
+  }
+}
+
+.card__image {
+  grid-area: image;
+  align-self: center;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+    width: 168px;
+    height: 200px;
   }
 }
 
 .card__link {
+  padding-right: 60px;
+  grid-area: link;
   text-decoration: none;
 }
 
 .card__title {
+  margin: 0;
+  margin-bottom: 18px;
   font-family: $font-heading;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: $color-gray-850
+  color: $color-gray-850;
+}
+
+.card__list {
+  margin: 0;
+  margin-bottom: 22px;
+  grid-area: list;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  font-size: 12px;
+}
+
+.card__button {
+  grid-area: button;
 }
 
 .card__parameter {
-  font-size: 12px;
+  margin: 0;
+}
+
+.card__value {
+  margin: 0;
+  text-align: right;
 }

@@ -1,4 +1,12 @@
 .page-header__nav {
+
+  @media (max-width: $mobile-width-only) {
+    &:not(&--main) {
+      border-bottom: 1px solid $color-gray-150;
+    }
+  }
+
+
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;

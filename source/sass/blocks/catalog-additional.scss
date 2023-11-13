@@ -1,16 +1,18 @@
 .catalog-additional {
-  padding: 20px;
+  padding: 25px 0 35px;
+  display: grid;
 }
 
 .catalog-additional__container {
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: 3fr 1fr;
     column-gap: 80px
   }
 }
 
 .catalog-additional__title {
+  margin: 0;
+  margin-bottom: 36px;
   font-family: $font-heading;
   font-size: 24px;
   line-height: 1;
@@ -21,7 +23,14 @@
 
 .catalog-additional__list {
   padding: 0;
+  margin-bottom: 35px;
   list-style-type: none;
+  border-bottom: 1px solid $color-gray-250;;
+}
+
+.catalog-additional__item {
+  padding: 12px 0 20px;
+  border-top: 1px solid $color-gray-250;
 }
 
 .card-row {
@@ -48,13 +57,19 @@
 }
 
 .card-row__title {
+  margin: 0;
+  margin-bottom: 12px;
   grid-area: title;
 }
 
 .card-row__size {
+  margin: 0;
+  margin-bottom: 15px;
   grid-area: size;
 }
 .card-row__price {
+  margin: 0;
+  margin-bottom: 15px;
   grid-area: price;
   text-align: right;
 }

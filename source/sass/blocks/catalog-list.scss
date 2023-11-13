@@ -1,5 +1,8 @@
 .catalog-list {
-  padding: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $color-gray-100;
+  }
 }
 
 .catalog-list__container {
@@ -12,5 +15,21 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
+  }
+}
+
+.catalog-list__item {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(50% - 50vw);
+      width: 100vw;
+      height: 1px;
+      background-color: $color-gray-100;
+    }
   }
 }

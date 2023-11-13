@@ -1,11 +1,22 @@
 .offer {
   min-height: 290px;
-  padding: 40px;
+  padding: 186px 58px 43px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: flex-end;
   background-color: $color-primary-500;
-  background-image: url("../../img/background/offer.jpg");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: 50% 58px, 50% 50%;
+  background-image:
+    url("../../img/icons/gift.svg"),
+    url("../../img/background/offer.jpg");
+
+
   text-align: center;
 
   &__text {
+    margin: 0;
     font-size: 16px;
     line-height: 20px;
     color: $color-white;

@@ -103,6 +103,11 @@ img {
   flex-grow: 1;
 }
 
+@media (max-width: 767px) {
+  .page-header__nav:not(.page-header__nav--main) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
 @media (min-width: 768px) {
   .page-header__nav {
     width: 708px;
@@ -1083,6 +1088,8 @@ img {
 }
 
 .page-main__title {
+  margin: 0;
+  padding: 28px 0 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 1;
@@ -1097,8 +1104,10 @@ img {
   color: #000000;
 }
 
-.catalog-list {
-  padding: 20px;
+@media (max-width: 767px) {
+  .catalog-list {
+    border-bottom: 1px solid #ebebeb;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1115,17 +1124,62 @@ img {
   }
 }
 
+.catalog-list__item {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .catalog-list__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+  }
+}
+
+.card {
+  padding: 20px 0 25px;
+  display: grid;
+}
+@media (max-width: 767px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image link" "image list" "button button";
+  }
+}
 @media (min-width: 768px) {
   .card {
-    background-color: #f2f2f2;
+    padding: 8px 38px 40px;
+    grid-template-rows: 200px auto;
+    grid-template-areas: "image" "link" "list" "button";
+    background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
+  }
+}
+
+.card__image {
+  grid-area: image;
+  align-self: center;
+  justify-self: center;
+}
+@media (min-width: 768px) {
+  .card__image {
+    margin-bottom: 34px;
+    width: 168px;
+    height: 200px;
   }
 }
 
 .card__link {
+  padding-right: 60px;
+  grid-area: link;
   text-decoration: none;
 }
 
 .card__title {
+  margin: 0;
+  margin-bottom: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1134,14 +1188,50 @@ img {
   color: #222222;
 }
 
-.card__parameter {
+.card__list {
+  margin: 0;
+  margin-bottom: 22px;
+  grid-area: list;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
   font-size: 12px;
 }
 
-.show-more {
-  text-align: center;
+.card__button {
+  grid-area: button;
 }
+
+.card__parameter {
+  margin: 0;
+}
+
+.card__value {
+  margin: 0;
+  text-align: right;
+}
+
+.show-more {
+  padding: 78px 0 25px;
+  text-align: center;
+  background-image: url(../../img/icons/plus.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25px;
+}
+@media (min-width: 768px) {
+  .show-more {
+    margin-top: 82px;
+    padding: 160px 38px 38px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f2f2f2;
+    background-position: 50% 52px;
+  }
+}
+
 .show-more__title {
+  margin: 0;
+  margin-bottom: 8px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1149,24 +1239,33 @@ img {
   text-transform: uppercase;
   color: #222222;
 }
+
 .show-more__text {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 12px;
   line-height: 16px;
 }
 
+.show-more__button {
+  margin-top: auto;
+}
+
 .catalog-additional {
-  padding: 20px;
+  padding: 25px 0 35px;
+  display: grid;
 }
 
 @media (min-width: 1280px) {
   .catalog-additional__container {
-    display: grid;
     grid-template-columns: 3fr 1fr;
     column-gap: 80px;
   }
 }
 
 .catalog-additional__title {
+  margin: 0;
+  margin-bottom: 36px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 1;
@@ -1177,7 +1276,14 @@ img {
 
 .catalog-additional__list {
   padding: 0;
+  margin-bottom: 35px;
   list-style-type: none;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.catalog-additional__item {
+  padding: 12px 0 20px;
+  border-top: 1px solid #cdcdcd;
 }
 
 .card-row {
@@ -1200,14 +1306,20 @@ img {
 }
 
 .card-row__title {
+  margin: 0;
+  margin-bottom: 12px;
   grid-area: title;
 }
 
 .card-row__size {
+  margin: 0;
+  margin-bottom: 15px;
   grid-area: size;
 }
 
 .card-row__price {
+  margin: 0;
+  margin-bottom: 15px;
   grid-area: price;
   text-align: right;
 }
@@ -1230,12 +1342,16 @@ img {
 
 .offer {
   min-height: 290px;
-  padding: 40px;
+  padding: 186px 58px 43px;
   background-color: #68b738;
-  background-image: url("../../img/background/offer.jpg");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: 50% 58px, 50% 50%;
+  background-image: url("../../img/icons/gift.svg"), url("../../img/background/offer.jpg");
   text-align: center;
 }
 .offer__text {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
