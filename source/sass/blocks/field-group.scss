@@ -14,27 +14,33 @@
 .field-group__list {
   padding: 0;
   list-style-type: none;
-}
 
-.field-group__list--contacts {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+    }
+  }
+
+
+  &--additional {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
+      row-gap: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns:  repeat(4, 1fr);
+      gap: 80px;
+    }
   }
 }
 
-
-.field-group__list--additional {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
-    row-gap: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns:  repeat(4, 1fr);
-    gap: 80px;
-  }
+.field-group__item:not(:last-child) {
+  margin-bottom: 14px;
 }
+
+.field-group__field

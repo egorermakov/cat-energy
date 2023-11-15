@@ -1,9 +1,8 @@
 .offer {
   min-height: 290px;
-  padding: 186px 58px 43px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: end;
   background-color: $color-primary-500;
   background-repeat: no-repeat;
   background-size: auto, cover;
@@ -11,14 +10,27 @@
   background-image:
     url("../../img/icons/gift.svg"),
     url("../../img/background/offer.jpg");
-
-
   text-align: center;
 
-  &__text {
-    margin: 0;
-    font-size: 16px;
-    line-height: 20px;
-    color: $color-white;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0;
+    min-height: 200px;
+    background-position: 77px 50%, 50% calc(50% - 50px);
+    align-items: center;
+    justify-content: end;
   }
+}
+
+.offer__text {
+  margin-bottom: 43px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-white;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin: 0;
+    margin-right: 124px;
+    text-align: left;
+  }
+
 }

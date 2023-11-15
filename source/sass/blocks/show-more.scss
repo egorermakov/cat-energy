@@ -23,7 +23,13 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: $color-gray-850
+  color: $color-gray-850;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+
+  }
 }
 
 .show-more__text {
@@ -31,6 +37,11 @@
   margin-bottom: 20px;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .show-more__button {

@@ -24,6 +24,7 @@
 .page-header__menu {
   @media (max-width: $mobile-width-only) {
     background-color: $color-white;
+    z-index: 2;
 
     .page-header__nav--closed & {
       display: none;

@@ -1,79 +1,88 @@
 .catalog-additional {
+  position: relative;
   padding: 25px 0 35px;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding: 68px 0 76px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 41px;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 2px;
+    z-index: -1;
+    background-color: $color-primary-500;
+
+    @media (min-width: $tablet-width) {
+      top: 91px;
+    }
+  }
 }
 
 .catalog-additional__container {
+  display: grid;
+  position: relative;
+
   @media (min-width: $desktop-width) {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 80px
   }
+
 }
 
 .catalog-additional__title {
   margin: 0;
+  margin-left: -20px;
   margin-bottom: 36px;
+  padding: 0 20px;
+  justify-self: start;
   font-family: $font-heading;
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
   color: $color-black;
   grid-column: 1 / -1;
+  background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0 36px;
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+    padding: 0 35px 0 40px;
+  }
 }
 
 .catalog-additional__list {
   padding: 0;
   margin-bottom: 35px;
   list-style-type: none;
-  border-bottom: 1px solid $color-gray-250;;
+  border-bottom: 1px solid $color-gray-250;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    border-left: 1px solid $color-gray-250;
+    border-right: 1px solid $color-gray-250;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-column: 1 / -2;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .catalog-additional__item {
   padding: 12px 0 20px;
   border-top: 1px solid $color-gray-250;
-}
-
-.card-row {
-  display: grid;
-  align-content: start;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "title title"
-    "size price"
-    "button button";
-
-  @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "title size price"
-    "button button button";
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "title size price button";
-  }
-
-}
-
-.card-row__title {
-  margin: 0;
-  margin-bottom: 12px;
-  grid-area: title;
-}
-
-.card-row__size {
-  margin: 0;
-  margin-bottom: 15px;
-  grid-area: size;
-}
-.card-row__price {
-  margin: 0;
-  margin-bottom: 15px;
-  grid-area: price;
-  text-align: right;
-}
-
-.card-row__button {
-  grid-area: button;
 }
