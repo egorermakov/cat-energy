@@ -35,13 +35,12 @@
 }
 
 .slider__bar {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
   appearance: none;
 
   @media (max-width: $mobile-width-only) {
     display: none;
-
   }
 }
 
@@ -60,7 +59,7 @@
   border: 12px solid $color-white;
   border-radius: 50%;
   background-color: $color-primary-500;
-  filter: drop-shadow(0px 1px 3px rgba($color-black, 0.16));
+  filter: drop-shadow(0 1px 3px rgba($color-black, 0.16));
   cursor: pointer;
 
   &:hover {
@@ -78,14 +77,13 @@
 
 .slider__bar::-moz-range-thumb {
   appearance: none;
-
   width: 32px;
   height: 32px;
   margin-top: -12px;
   border: 12px solid $color-white;
   border-radius: 50%;
   background-color: $color-primary-500;
-  filter: drop-shadow(0px 1px 3px rgba($color-black, 0.16));
+  filter: drop-shadow(0 1px 3px rgba($color-black, 0.16));
   cursor: pointer;
 
   &:hover {

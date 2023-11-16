@@ -10,7 +10,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px
+    gap: 80px;
   }
 }
 
@@ -64,7 +64,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     padding-left: 162px;
-    min-height: 100PX;
+    min-height: 100px;
   }
 
   &::before {
@@ -104,7 +104,7 @@
   left: 7px;
   width: 36px;
   height: 50px;
-  background-image: url(../../img/icons/cat-slim.svg);
+  background-image: url("../../img/icons/cat-slim.svg");
 
   @media (min-width: $tablet-width) {
     top: 80px;
@@ -128,7 +128,7 @@
   left: -10px;
   width: 67px;
   height: 28px;
-  background-image: url(../../img/icons/cat-pro.svg);
+  background-image: url("../../img/icons/cat-pro.svg");
 
   @media (min-width: $tablet-width) {
     top: 135px;
@@ -180,7 +180,7 @@
     height: 10px;
     background-repeat: no-repeat;
     background-position: 100% 50%;
-    background-image: url(../../img/icons/arrow.svg);
+    background-image: url("../../img/icons/arrow.svg");
   }
 
   &:hover {

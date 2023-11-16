@@ -32,7 +32,6 @@
     width: 565px;
     padding: 56px 80px;
     background-color: $color-white;
-
   }
 }
 
@@ -44,6 +43,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-black;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
@@ -51,7 +51,7 @@
 }
 
 .contacts__address {
-  margin: 0 ;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
 

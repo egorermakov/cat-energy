@@ -7,7 +7,7 @@
     color: $color-white;
     background-color: $color-primary-500;
     background-image:
-      url(../../img/background/promo-small.jpg),
+      url("../../img/background/promo-small.jpg"),
       linear-gradient($color-primary-800 0, $color-primary-800 302px, $color-white  302px);
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -60,7 +60,6 @@
     margin-bottom: 41px;
     font-size: 60px;
   }
-
 }
 
 .promo__subtitle {

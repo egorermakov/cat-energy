@@ -4,8 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 0 60px;
-    background-image:
-      linear-gradient(to top, $color-gray-100 462px, $color-white 462px);
+    background-image: linear-gradient(to top, $color-gray-100 462px, $color-white 462px);
   }
 
   @media (min-width: $desktop-width) {
@@ -203,7 +202,6 @@
       max-width: none;
       width: 594px;
       height: 511px;
-
     }
   }
 }

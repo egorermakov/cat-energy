@@ -30,9 +30,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px
+    column-gap: 80px;
   }
-
 }
 
 .catalog-additional__title {

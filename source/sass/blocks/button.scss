@@ -11,7 +11,7 @@
   color: $color-white;
   background-color: $color-primary-500;
 
-  &:hover{
+  &:hover {
     background-color: $color-primary-700;
   }
 
@@ -23,7 +23,6 @@
 
   &--secondary {
     background-color: $color-gray-50;
-    color: $color-gray-700
+    color: $color-gray-700;
   }
-
 }

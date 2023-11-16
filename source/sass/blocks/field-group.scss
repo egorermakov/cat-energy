@@ -23,7 +23,6 @@
     }
   }
 
-
   &--additional {
     @media (min-width: $tablet-width) {
       display: grid;
@@ -33,7 +32,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns:  repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 80px;
     }
   }
@@ -42,5 +41,3 @@
 .field-group__item:not(:last-child) {
   margin-bottom: 14px;
 }
-
-.field-group__field

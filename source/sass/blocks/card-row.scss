@@ -58,6 +58,7 @@
     grid-column: 3 / 4;
   }
 }
+
 .card-row__price {
   margin: 0;
   margin-bottom: 15px;
@@ -73,6 +74,7 @@
 
 .card-row__button {
   grid-area: button;
+
   @media (min-width: $desktop-width) {
     grid-column: -2 / -1;
   }
