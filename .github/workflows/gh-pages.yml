@@ -3,7 +3,6 @@ name: gh-pages
 on:
   push:
     branches:
-      # - master
       - main
 
 permissions:
@@ -37,6 +36,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          # folder: ./build
-          folder: ./source
+          folder: ./build
           branch: gh-pages
