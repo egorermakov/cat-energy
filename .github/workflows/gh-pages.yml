@@ -3,7 +3,8 @@ name: gh-pages
 on:
   push:
     branches:
-      - master
+      # - master
+      - main
 
 permissions:
   contents: write
