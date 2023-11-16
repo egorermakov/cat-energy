@@ -1,0 +1,28 @@
+.button {
+  padding: 10px 12px;
+  display: inline-block;
+  border: none;
+  font-family: $font-heading;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-primary-500;
+
+  &:hover {
+    background-color: $color-primary-700;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba($color-white, 0.3);
+    background-color: $color-primary-700;
+  }
+
+  &--secondary {
+    background-color: $color-gray-50;
+    color: $color-gray-700;
+  }
+}

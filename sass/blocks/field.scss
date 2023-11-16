@@ -1,0 +1,36 @@
+.field {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 14px;
+  align-items: center;
+  font-family: $font-heading;
+  font-style: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-gray-700;
+}
+
+.field__input {
+  padding: 14px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid $color-gray-150;
+
+  .field--no-lable & {
+    grid-column: 1 / -1;
+  }
+
+  .field--icon & {
+    padding-right: 42px;
+  }
+}
+
+.field__icon {
+  position: absolute;
+  right: 16px;
+  top: calc(50% - 12px);
+}

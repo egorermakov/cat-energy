@@ -1,0 +1,37 @@
+.logo {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:not(.logo--footer) {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+
+  img {
+    display: block;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 8px;
+    justify-content: center;
+  }
+}
+
+.logo--footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo__sign {
+  justify-self: center;
+}
