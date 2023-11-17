@@ -74,6 +74,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;

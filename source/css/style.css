@@ -178,6 +178,7 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .page-header__toggle {
@@ -411,6 +412,8 @@ img {
   left: 7px;
   width: 36px;
   height: 50px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-image: url("../../img/icons/cat-slim.svg");
 }
 @media (min-width: 768px) {
@@ -437,6 +440,8 @@ img {
   left: -10px;
   width: 67px;
   height: 28px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-image: url("../../img/icons/cat-pro.svg");
 }
 @media (min-width: 768px) {
@@ -1675,7 +1680,9 @@ img {
 }
 
 .logo {
+  position: relative;
   cursor: pointer;
+  pointer-events: none;
 }
 .logo:hover {
   opacity: 0.8;
@@ -1694,8 +1701,15 @@ img {
 }
 @media (max-width: 767px) {
   .logo {
-    padding: 8px;
     justify-content: center;
+  }
+  .logo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 34px;
+    width: 56px;
+    height: 64px;
   }
 }
 
@@ -1704,8 +1718,13 @@ img {
   align-items: center;
 }
 
+.logo__image {
+  pointer-events: all;
+}
+
 .logo__sign {
   justify-self: center;
+  pointer-events: all;
 }
 
 .slider {
@@ -1767,7 +1786,7 @@ img {
   border: 12px solid #ffffff;
   border-radius: 50%;
   background-color: #68b738;
-  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
   cursor: pointer;
 }
 .slider__bar::-webkit-slider-thumb:hover {
@@ -1785,7 +1804,7 @@ img {
   border: 12px solid #ffffff;
   border-radius: 50%;
   background-color: #68b738;
-  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
   cursor: pointer;
 }
 .slider__bar::-moz-range-thumb:hover {
