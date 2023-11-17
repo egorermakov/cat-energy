@@ -5,7 +5,7 @@
   gap: 14px;
   align-items: center;
   font-family: $font-heading;
-  font-style: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -19,6 +19,21 @@
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid $color-gray-150;
+  border-radius: 0;
+
+  &:hover {
+    border-color: $color-gray-250;
+  }
+
+  &:focus {
+    outline: 2px solid $color-gray-700;
+    outline-offset: -2px;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    outline: 2px solid $color-error-500;
+    outline-offset: -2px;
+  }
 
   .field--no-lable & {
     grid-column: 1 / -1;
@@ -33,4 +48,12 @@
   position: absolute;
   right: 16px;
   top: calc(50% - 12px);
+
+  .field__input:focus + & {
+    fill: $color-primary-500;
+  }
+
+  .field__input:not(:placeholder-shown):invalid + & {
+    fill: $color-error-500;
+  }
 }

@@ -73,9 +73,18 @@ img {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5eaa2f;
 }
+
 .button--secondary {
   background-color: #f2f2f2;
   color: #444444;
+}
+.button--secondary:hover {
+  background-color: #ebebeb;
+}
+.button--secondary:focus, .button--secondary:active {
+  color: #444444;
+  background-color: #ebebeb;
+  opacity: 0.3;
 }
 
 .page {
@@ -1541,8 +1550,24 @@ img {
   margin: 0;
 }
 
+.form__button {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
 .form__additional {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 16px;
   color: #000000;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .form__additional {
+    font-size: 16px;
+    text-align: left;
+  }
 }
 
 .field-group {
@@ -1551,16 +1576,50 @@ img {
 }
 
 .field-group__title {
+  margin-bottom: 35px;
+  display: flex;
+  float: left;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   color: #000000;
 }
+.field-group__title::after {
+  content: "";
+  margin-top: 16px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+  height: 2px;
+  background-color: #68b738;
+}
+.field-group__title span {
+  margin-left: -22px;
+  padding: 0 22px;
+  position: relative;
+  z-index: 1;
+  width: max-content;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .field-group__title span {
+    margin-left: -40px;
+    padding: 0 40px;
+  }
+}
+
+.field-group__field {
+  clear: both;
+  width: 100%;
+}
 
 .field-group__list {
+  margin: 0;
   padding: 0;
   list-style-type: none;
+  clear: both;
 }
 @media (min-width: 1280px) {
   .field-group__list--contacts {
@@ -1595,7 +1654,7 @@ img {
   gap: 14px;
   align-items: center;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1609,6 +1668,18 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid #e6e6e6;
+  border-radius: 0;
+}
+.field__input:hover {
+  border-color: #cdcdcd;
+}
+.field__input:focus {
+  outline: 2px solid #444444;
+  outline-offset: -2px;
+}
+.field__input:not(:placeholder-shown):invalid {
+  outline: 2px solid #ff8282;
+  outline-offset: -2px;
 }
 .field--no-lable .field__input {
   grid-column: 1/-1;
@@ -1621,6 +1692,12 @@ img {
   position: absolute;
   right: 16px;
   top: calc(50% - 12px);
+}
+.field__input:focus + .field__icon {
+  fill: #68b738;
+}
+.field__input:not(:placeholder-shown):invalid + .field__icon {
+  fill: #ff8282;
 }
 
 .control {
@@ -1664,7 +1741,7 @@ img {
 .control__lead::before {
   border: 1px solid #cdcdcd;
 }
-.control--radio .control__input + .control__lead::before {
+.control--radio .control__lead::before {
   border-radius: 50%;
 }
 .control--radio .control__input:checked + .control__lead::after {
@@ -1677,6 +1754,12 @@ img {
   padding: 4px;
   background-position: 50% 50%;
   background-image: url("../../img/icons/tick.svg");
+}
+.control__input:disabled + .control__lead {
+  opacity: 0.3;
+}
+.control__input:disabled + .control__lead::before {
+  border-color: #666666;
 }
 
 .logo {
