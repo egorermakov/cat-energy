@@ -22,6 +22,21 @@
   margin: 0;
 }
 
+.form__button {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
 .form__additional {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 16px;
   color: $color-black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: left;
+  }
 }

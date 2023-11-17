@@ -42,7 +42,7 @@
     border: 1px solid $color-gray-250;
   }
 
-  .control--radio .control__input + &::before {
+  .control--radio &::before {
     border-radius: 50%;
   }
 
@@ -57,5 +57,13 @@
     padding: 4px;
     background-position: 50% 50%;
     background-image: url("../../img/icons/tick.svg");
+  }
+
+  .control__input:disabled + & {
+    opacity: 0.3;
+  }
+
+  .control__input:disabled + &::before {
+    border-color: $color-gray-600;
   }
 }

@@ -4,16 +4,53 @@
 }
 
 .field-group__title {
+  margin-bottom: 35px;
+  display: flex;
+  float: left;
   font-family: $font-heading;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   color: $color-black;
+
+  &::after {
+    content: "";
+    margin-top: 16px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 2px;
+    background-color: #68b738;
+  }
+
+  span {
+    margin-left: -22px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 1;
+    width: max-content;
+    background-color: $color-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    span {
+      margin-left: -40px;
+      padding: 0 40px;
+    }
+  }
+}
+
+.field-group__field {
+  clear: both;
+  width: 100%;
 }
 
 .field-group__list {
+  margin: 0;
   padding: 0;
   list-style-type: none;
+  clear: both;
 
   &--contacts {
     @media (min-width: $desktop-width) {

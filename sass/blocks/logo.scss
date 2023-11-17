@@ -1,5 +1,7 @@
 .logo {
+  position: relative;
   cursor: pointer;
+  pointer-events: none;
 
   &:hover {
     opacity: 0.8;
@@ -22,8 +24,16 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 8px;
     justify-content: center;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 34px;
+      width: 56px;
+      height: 64px;
+    }
   }
 }
 
@@ -32,6 +42,11 @@
   align-items: center;
 }
 
+.logo__image {
+  pointer-events: all;
+}
+
 .logo__sign {
   justify-self: center;
+  pointer-events: all;
 }
