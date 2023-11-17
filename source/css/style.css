@@ -169,7 +169,7 @@ img {
     width: 320px;
     display: grid;
     grid-template-columns: 34px 1fr 34px;
-    gap: 16px;
+    gap: 48px;
     justify-content: space-between;
     align-items: center;
   }
@@ -1777,7 +1777,7 @@ img {
   display: grid;
   grid-template-columns: 34px 1fr;
   align-items: center;
-  gap: 16px;
+  gap: 48px;
 }
 .logo img {
   display: block;
@@ -1792,7 +1792,7 @@ img {
     position: absolute;
     left: 34px;
     width: 56px;
-    height: 64px;
+    height: 36px;
   }
 }
 
