@@ -2,22 +2,52 @@
   min-height: 290px;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
+
   background-color: $color-primary-500;
   background-repeat: no-repeat;
   background-size: auto, cover;
   background-position: 50% 58px, 50% 50%;
   background-image:
     url("../../img/icons/gift.svg"),
-    url("../../img/background/offer.jpg");
+    url("../../img/background/offer-mobile.jpg");
   text-align: center;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../img/icons/gift.svg"),
+      url("../../img/background/offer-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
     padding: 0;
     min-height: 200px;
-    background-position: 77px 50%, 50% calc(50% - 50px);
+    background-position: 77px 50%, 50%;
     align-items: center;
     justify-content: end;
+    background-image:
+      url("../../img/icons/gift.svg"),
+      url("../../img/background/offer-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../img/icons/gift.svg"),
+        url("../../img/background/offer-mobile@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 245px;
+    background-position: 50% 56px, 50% 50%;
+    background-image:
+      url("../../img/icons/gift.svg"),
+      url("../../img/background/offer-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../img/icons/gift.svg"),
+        url("../../img/background/offer-desktop@2x.jpg");
+    }
   }
 }
 

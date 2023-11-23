@@ -22,10 +22,12 @@
   }
 }
 
+.card__picture,
 .card__image {
   grid-area: image;
   align-self: center;
   justify-self: center;
+  width: auto;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 34px;

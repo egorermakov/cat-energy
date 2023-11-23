@@ -168,11 +168,19 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    grid-column: 1 / -1;
+    grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: 174px 1fr;
-    gap: 64px;
+    grid-template-columns: 1fr 42px 1fr;
     text-align: left;
+
+    span:first-child {
+      grid-column: 1 / 3;
+    }
+
+    span:last-child {
+      grid-column: -2 / -1;
+      text-align: center;
+    }
   }
 }
 
