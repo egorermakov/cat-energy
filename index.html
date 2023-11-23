@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи — Функциональное питание для котов</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page__header page-header">
       <nav class="page-header__nav page-header__nav--main page-header__nav--closed page-header__nav--nojs">
         <div class="page-header__bar">
           <a class="page-header__logo logo">
-            <div class="logo__image" >
-              <img src="img/logo-image.svg" width="33" height="38" alt="Cat Energy">
-            </div>
-            <div class="logo__sign">
-              <img src="img/logo-sign.svg" width="101" height="18" alt="" aria-hidden="true">
-            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Cat Energy">
+            </picture>
+
+            <img class="logo__sign" src="img/logo-sign.svg" width="101" height="18" alt="" aria-hidden="true">
           </a>
 
           <button class="page-header__toggle" type="button">
@@ -47,7 +51,12 @@
             питание для котов
           </h1>
           <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="./img/index-can-mobile.png" width="280" height="270" alt="Банка куриного корма Cat Energy Pro на 500 грамм">
+          <picture>
+            <source media="(min-width: 1200px)"  srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="promo__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Банка куриного корма Cat Energy Pro на 500 грамм">
+          </picture>
+
           <a class="promo__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -129,10 +138,17 @@
           <div class="example__view">
             <d iv class="example__images">
               <div class="example__image example__image--before example__image--active">
-                <img src="img/before-mobile.png" width="280" height="232" alt="Толстый кот до употребления корма">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet.png 2x">
+                  <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="280" height="232" alt="Толстый кот до употребления корма">
+                </picture>
               </div>
               <div class="example__image example__image--after">
-                <img src="img/after-mobile.png" alt="Худой кот после употребления корма">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+                  <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот после употребления корма">
+                </picture>
+
               </div>
             </d>
 

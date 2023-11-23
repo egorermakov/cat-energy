@@ -16,7 +16,16 @@
     display: grid;
     grid-template-columns: 34px 1fr;
     align-items: center;
-    gap: 48px;
+    gap: 12px;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 61px 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 71px 1fr;
+      gap: 14px;
+    }
   }
 
   img {
@@ -43,10 +52,24 @@
 }
 
 .logo__image {
+  width: 33px;
   pointer-events: all;
+
+  @media (min-width: $tablet-width) {
+    width: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 71px;
+  }
 }
 
 .logo__sign {
+  width: 101px;
   justify-self: center;
   pointer-events: all;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
 }
