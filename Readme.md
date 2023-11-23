@@ -1,6 +1,6 @@
 # Личный проект «{{projectTitle}}»
 
-* Студент: [{{Егор Ермаков}}]({{https://htmlacademy.ru/profile/egorermakov}}).
+* Студент: [Егор Ермаков](https://htmlacademy.ru/profile/egorermakov).
 * Наставник: `Неизвестно`.
 
 ---
