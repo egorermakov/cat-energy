@@ -204,7 +204,7 @@ img {
     text-align: center;
     color: #ffffff;
     background-color: #68b738;
-    background-image: url("../../img/background/promo-mobile.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
+    background-image: url("../img/background/promo-mobile.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
     background-repeat: no-repeat;
     background-position: 50% 0;
   }
@@ -212,7 +212,7 @@ img {
 @media (max-width: 767px) and (min-resolution: 2dppx) {
   .promo {
     background-size: auto 302px, auto;
-    background-image: url("../../img/background/promo-mobile@2x.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
+    background-image: url("../img/background/promo-mobile@2x.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
   }
 }
 @media (min-width: 768px) {
@@ -233,7 +233,7 @@ img {
     left: 50%;
     z-index: -2;
     background-color: #63a63b;
-    background-image: url("../../img/background/promo-desktop.jpg");
+    background-image: url("../img/background/promo-desktop.jpg");
     background-repeat: no-repeat;
     background-position: 0 100%;
   }
@@ -241,7 +241,7 @@ img {
 @media (min-width: 1280px) and (min-resolution: 2dppx) {
   .promo::after {
     background-size: auto 694px;
-    background-image: url("../../img/background/promo-desktop@2x.jpg");
+    background-image: url("../img/background/promo-desktop@2x.jpg");
   }
 }
 
@@ -615,16 +615,16 @@ img {
   }
 }
 .process__item--leaf::before {
-  background-image: url("../../img/icons/leaf.svg");
+  background-image: url("../img/icons/leaf.svg");
 }
 .process__item--tub::before {
-  background-image: url("../../img/icons/tub.svg");
+  background-image: url("../img/icons/tub.svg");
 }
 .process__item--eat::before {
-  background-image: url("../../img/icons/eat.svg");
+  background-image: url("../img/icons/eat.svg");
 }
 .process__item--alarm::before {
-  background-image: url("../../img/icons/alarm.svg");
+  background-image: url("../img/icons/alarm.svg");
 }
 @media (min-width: 768px) {
   .process__item::after {
@@ -1524,12 +1524,12 @@ img {
   background-repeat: no-repeat;
   background-size: auto, cover;
   background-position: 50% 58px, 50% 50%;
-  background-image: url("../../img/icons/gift.svg"), url("../../img/background/offer-mobile.jpg");
+  background-image: url("../img/icons/gift.svg"), url("../img/background/offer-mobile.jpg");
   text-align: center;
 }
 @media (min-resolution: 2dppx) {
   .offer {
-    background-image: url("../../img/icons/gift.svg"), url("../../img/background/offer-mobile@2x.jpg");
+    background-image: url("../img/icons/gift.svg"), url("../img/background/offer-mobile@2x.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -1539,24 +1539,24 @@ img {
     background-position: 77px 50%, 50%;
     align-items: center;
     justify-content: end;
-    background-image: url("../../img/icons/gift.svg"), url("../../img/background/offer-tablet.jpg");
+    background-image: url("../img/icons/gift.svg"), url("../../img/background/offer-tablet.jpg");
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .offer {
-    background-image: url("../../img/icons/gift.svg"), url("../../img/background/offer-mobile@2x.jpg");
+    background-image: url("../img/icons/gift.svg"), url("../img/background/offer-mobile@2x.jpg");
   }
 }
 @media (min-width: 1280px) {
   .offer {
     min-height: 245px;
     background-position: 50% 56px, 50% 50%;
-    background-image: url("../../img/icons/gift.svg"), url("../../img/background/offer-desktop.jpg");
+    background-image: url("../img/icons/gift.svg"), url("../img/background/offer-desktop.jpg");
   }
 }
 @media (min-width: 1280px) and (min-resolution: 2dppx) {
   .offer {
-    background-image: url("../../img/icons/gift.svg"), url("../../img/background/offer-desktop@2x.jpg");
+    background-image: url("../img/icons/gift.svg"), url("../img/background/offer-desktop@2x.jpg");
   }
 }
 
@@ -1797,7 +1797,7 @@ img {
 .control--checkbox .control__input:checked + .control__lead::after {
   padding: 4px;
   background-position: 50% 50%;
-  background-image: url("../../img/icons/tick.svg");
+  background-image: url("../img/icons/tick.svg");
 }
 .control__input:disabled + .control__lead {
   opacity: 0.3;

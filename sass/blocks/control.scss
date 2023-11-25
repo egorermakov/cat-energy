@@ -56,7 +56,7 @@
   .control--checkbox .control__input:checked + &::after {
     padding: 4px;
     background-position: 50% 50%;
-    background-image: url("../../img/icons/tick.svg");
+    background-image: url("../img/icons/tick.svg");
   }
 
   .control__input:disabled + & {
