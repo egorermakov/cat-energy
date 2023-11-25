@@ -463,7 +463,7 @@ img {
   height: 28px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url("../../img/icons/cat-pro.svg");
+  background-image: url("../img/icons/cat-pro.svg");
 }
 @media (min-width: 768px) {
   .catalog-section__title--pro::after {
