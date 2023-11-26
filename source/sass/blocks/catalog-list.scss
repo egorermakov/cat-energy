@@ -1,4 +1,6 @@
 .catalog-list {
+  overflow: hidden;
+
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $color-gray-100;
   }
@@ -13,7 +15,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 60px;
   }
 }
 

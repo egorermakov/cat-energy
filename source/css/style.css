@@ -129,6 +129,7 @@ img {
 }
 @media (min-width: 1280px) {
   .page-header__nav {
+    padding: 54px 0;
     width: 1220px;
   }
 }
@@ -183,7 +184,7 @@ img {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  background-image: url("../../img/icons/burger.svg");
+  background-image: url("../img/icons/burger.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
@@ -253,8 +254,8 @@ img {
 }
 @media (min-width: 1280px) {
   .promo__container {
-    min-height: 582px;
-    padding: 20px 610px 95px 80px;
+    min-height: 495px;
+    padding: 26px 610px 95px 80px;
   }
 }
 
@@ -283,7 +284,7 @@ img {
 }
 @media (min-width: 768px) {
   .promo__subtitle {
-    margin-bottom: 49px;
+    margin-bottom: 50px;
     font-size: 20px;
   }
 }
@@ -303,7 +304,7 @@ img {
 }
 @media (min-width: 1280px) {
   .promo__image {
-    top: 30px;
+    top: -60px;
     left: calc(50% - 162px);
     width: 552px;
     height: 499px;
@@ -315,7 +316,7 @@ img {
 }
 @media (min-width: 768px) {
   .promo__button {
-    padding: 14px 26px;
+    padding: 16px 26px;
     width: auto;
     font-size: 20px;
   }
@@ -1086,7 +1087,7 @@ img {
   .site-menu__item--active::after {
     content: "";
     position: absolute;
-    bottom: 4px;
+    bottom: 10px;
     right: 17px;
     left: 17px;
     height: 2px;
@@ -1121,6 +1122,11 @@ img {
 .page-main__heading {
   padding: 28px 0 40px;
 }
+@media (min-width: 1280px) {
+  .page-main__heading {
+    padding: 16px 0 40px;
+  }
+}
 
 .page-main__title {
   margin: 0;
@@ -1144,6 +1150,9 @@ img {
   color: #000000;
 }
 
+.catalog-list {
+  overflow: hidden;
+}
 @media (max-width: 767px) {
   .catalog-list {
     border-bottom: 1px solid #ebebeb;
@@ -1160,7 +1169,8 @@ img {
 @media (min-width: 1280px) {
   .catalog-list__container {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 60px;
   }
 }
 
@@ -1191,7 +1201,7 @@ img {
 }
 @media (min-width: 768px) {
   .card {
-    padding: 8px 38px 40px;
+    padding: 8px 40px 40px;
     grid-template-rows: 200px auto;
     grid-template-areas: "image" "link" "list" "button";
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
@@ -1201,15 +1211,9 @@ img {
 .card__picture,
 .card__image {
   grid-area: image;
-  align-self: center;
+  align-self: self-end;
   justify-self: center;
   width: auto;
-}
-@media (min-width: 768px) {
-  .card__picture,
-.card__image {
-    margin-bottom: 34px;
-  }
 }
 
 .card__link {
@@ -1222,7 +1226,7 @@ img {
   margin-bottom: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
@@ -1235,11 +1239,16 @@ img {
 }
 @media (min-width: 768px) {
   .card__title {
-    margin-bottom: 21px;
+    margin-bottom: 16px;
     padding: 0;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+}
+@media (min-width: 1280px) {
+  .card__title {
+    padding-top: 36px;
   }
 }
 
@@ -1259,6 +1268,11 @@ img {
     font-size: 16px;
   }
 }
+@media (min-width: 1280px) {
+  .card__list {
+    margin-bottom: 32px;
+  }
+}
 
 .card__button {
   grid-area: button;
@@ -1269,7 +1283,7 @@ img {
 }
 @media (min-width: 768px) {
   .card__parameter {
-    padding: 6px 0;
+    padding: 7px 0;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -1319,6 +1333,11 @@ img {
     line-height: 22px;
   }
 }
+@media (min-width: 1280px) {
+  .show-more__title {
+    margin-bottom: 24px;
+  }
+}
 
 .show-more__text {
   margin: 0;
@@ -1344,7 +1363,7 @@ img {
 }
 @media (min-width: 768px) {
   .catalog-additional {
-    padding: 68px 0 76px;
+    padding: 76px 0 76px;
   }
 }
 .catalog-additional::after {
