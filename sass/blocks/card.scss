@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 8px 38px 40px;
+    padding: 8px 40px 40px;
     grid-template-rows: 200px auto;
     grid-template-areas:
       "image"
@@ -25,13 +25,9 @@
 .card__picture,
 .card__image {
   grid-area: image;
-  align-self: center;
+  align-self: self-end;
   justify-self: center;
   width: auto;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
-  }
 }
 
 .card__link {
@@ -44,7 +40,7 @@
   margin-bottom: 18px;
   font-family: $font-heading;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   color: $color-gray-850;
@@ -57,11 +53,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 21px;
+    margin-bottom: 16px;
     padding: 0;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 36px;
   }
 }
 
@@ -79,6 +79,10 @@
     gap: 0;
     font-size: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .card__button {
@@ -89,7 +93,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 6px 0;
+    padding: 7px 0;
     border-bottom: 1px solid $color-gray-250;
   }
 }
