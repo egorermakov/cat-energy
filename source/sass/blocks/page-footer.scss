@@ -5,7 +5,9 @@
 
 .page-footer__container {
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 164px 1fr 164px;
+    gap: 16px;
     align-items: center;
     justify-content: space-between;
   }

@@ -520,7 +520,7 @@ img {
   height: 10px;
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  background-image: url("../../img/icons/arrow.svg");
+  background-image: url("../img/icons/arrow.svg");
 }
 .catalog-section__link:hover::after {
   width: 32px;
@@ -983,7 +983,9 @@ img {
 
 @media (min-width: 768px) {
   .page-footer__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 164px 1fr 164px;
+    gap: 16px;
     align-items: center;
     justify-content: space-between;
   }
@@ -1888,6 +1890,9 @@ img {
   .logo__image {
     width: 71px;
   }
+}
+.logo--footer .logo__image {
+  width: 128px;
 }
 
 .logo__sign {

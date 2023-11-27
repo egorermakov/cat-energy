@@ -62,6 +62,10 @@
   @media (min-width: $desktop-width) {
     width: 71px;
   }
+
+  .logo--footer & {
+    width: 128px;
+  }
 }
 
 .logo__sign {
