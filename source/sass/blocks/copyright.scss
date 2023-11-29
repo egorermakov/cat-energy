@@ -9,7 +9,7 @@
 
   &:hover {
     .copyright__image {
-      fill: $color-primary-500;
+      color: $color-primary-500;
     }
   }
 
@@ -27,5 +27,5 @@
   display: block;
   margin: 0;
   margin-left: 22px;
-  fill: $color-gray-700;
+  color: $color-gray-700;
 }
