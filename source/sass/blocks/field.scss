@@ -50,10 +50,10 @@
   top: calc(50% - 12px);
 
   .field__input:focus + & {
-    fill: $color-primary-500;
+    color: $color-primary-500;
   }
 
   .field__input:not(:placeholder-shown):invalid + & {
-    fill: $color-error-500;
+    color: $color-error-500;
   }
 }
