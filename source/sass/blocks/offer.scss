@@ -1,9 +1,6 @@
 .offer {
+  padding: 186px 56px 43px;
   min-height: 290px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-
   background-color: $color-primary-500;
   background-repeat: no-repeat;
   background-size: auto, cover;
@@ -11,7 +8,11 @@
   background-image:
     url("../img/icons/gift.svg"),
     url("../img/background/offer-mobile.jpg");
+
   text-align: center;
+  color: $color-white;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-resolution: 2dppx) {
     background-image:
@@ -20,14 +21,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 70px 120px 70px 422px;
+    background-position: 77px 50%, 50% 50%;
     min-height: 200px;
-    background-position: 77px 50%, 50%;
     align-items: center;
     justify-content: end;
     background-image:
       url("../img/icons/gift.svg"),
       url("../../img/background/offer-tablet.jpg");
+
+    text-align: left;
+
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -38,10 +42,14 @@
 
   @media (min-width: $desktop-width) {
     min-height: 245px;
-    background-position: 50% 56px, 50% 50%;
+    padding: 186px 40px 42px;
+    background-position: 50% 58px, 50% 50%;
+    justify-content: center;
     background-image:
       url("../img/icons/gift.svg"),
       url("../img/background/offer-desktop.jpg");
+
+    text-align: center;
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -52,14 +60,5 @@
 }
 
 .offer__text {
-  margin-bottom: 43px;
-  font-size: 16px;
-  line-height: 20px;
-  color: $color-white;
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    margin: 0;
-    margin-right: 124px;
-    text-align: left;
-  }
+  margin: 0;
 }

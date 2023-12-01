@@ -141,21 +141,25 @@
           </div>
 
           <div class="example__view">
-            <d iv class="example__images">
+            <div class="example__images">
               <div class="example__image example__image--before example__image--active">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet.png 2x">
                   <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="280" height="232" alt="Толстый кот до употребления корма">
                 </picture>
               </div>
               <div class="example__image example__image--after">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
                   <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот после употребления корма">
                 </picture>
 
               </div>
-            </d>
+            </div>
 
             <div class="example__slider slider slider--before">
               <button class="slider__button" type="button">Было</button>
